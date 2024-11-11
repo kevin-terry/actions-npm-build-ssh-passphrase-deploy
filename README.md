@@ -1,35 +1,6 @@
-# github-actions-tutorial
+# Github Actions Workflow Test
 
-This template should help get you started developing with Vue 3 in Vite.
+## Build & Deploy using Rsync via SSH with Passphrase
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+This simple JS project was used to test a github actions workflow. This workflow will build and deploy your project over SSH even if a passphrase is required. Awesome!
+Thank you [Burnett01/rsync-deployments](https://github.com/Burnett01/rsync-deployments). For all available configurations please see the original repo.
