@@ -1,20 +1,28 @@
-on: push
-name: Build and Deploy
+name: Build JS App & Deploy via SSH with Passphrase
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        cache: "npm"
-    - run: npm ci
+    - name: Checkout Code
+      uses: actions/checkout@v3
 
-    - name: Build
+    - name: Install Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+        cache: "npm"
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Build Project
       run: npm run build
 
-    - name: Rsync Deployments
+    - name: Sync Deployment
       uses: burnett01/rsync-deployments@7.0.1
       with:
         switches: -avzr --delete
