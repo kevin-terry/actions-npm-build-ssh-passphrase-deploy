@@ -4,16 +4,27 @@ defineProps({
     type: String,
     required: true,
   },
-})
+});
 </script>
 
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      You’ve successfully built and deployed a project with
+      <a
+        href="https://github.com/features/actions"
+        target="_blank"
+        rel="noopener"
+        >GitHub</a
+      >
+      +
+      <a
+        href="https://github.com/features/actions"
+        target="_blank"
+        rel="noopener"
+        >Actions</a
+      >
     </h3>
   </div>
 </template>
