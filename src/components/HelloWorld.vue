@@ -11,13 +11,10 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully built and deployed a project with
-      <a
-        href="https://github.com/features/actions"
-        target="_blank"
-        rel="noopener"
-        >GitHub</a
-      >
+      You’ve successfully built and deployed a
+      <a href="https://vuejs.org" target="_blank" rel="noopener">Vue</a> project
+      with
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
       +
       <a
         href="https://github.com/features/actions"
